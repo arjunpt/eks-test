@@ -6,7 +6,7 @@ on:
 
 jobs:
   Templates:
-    uses: arjunpt/eks-python-argo/.github/workflows/cicd.yml@main
+    uses: arjunpt/eks-python/.github/workflows/cicd.yml@main
     with:
       python-version: "3.10"
       requirements-path: "src/requirements.txt"
