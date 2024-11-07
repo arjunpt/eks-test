@@ -1,4 +1,4 @@
-name: Python-eks-applications-template
+name: EKS-PYTHON-EKS
 
 on:
   push:
