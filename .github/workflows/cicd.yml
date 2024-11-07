@@ -16,6 +16,8 @@ jobs:
       ECR_REGISTRY: "445567111188.dkr.ecr.us-east-1.amazonaws.com"
       IMAGE_NAME: "python"
       IMAGE_TAG: "latest"
+      deployment-manifest: "manifest/deployment.yaml"
+      service-manifest: "manifest/service.yaml"
     secrets:
       SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
