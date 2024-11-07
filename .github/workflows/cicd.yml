@@ -13,7 +13,7 @@ jobs:
       test-path: "src/test/test.py"
       dockerfile-path: "Dockerfile"
       ecr-repo-name: "python"
-      ECR_REGISTRY: "445567111188.dkr.ecr.us-east-1.amazonaws.com/python"
+      ECR_REGISTRY: "445567111188.dkr.ecr.us-east-1.amazonaws.com"
       IMAGE_NAME: "python"
       IMAGE_TAG: "latest"
     secrets:
