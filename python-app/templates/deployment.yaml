@@ -1,3 +1,5 @@
+# deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -5,7 +7,7 @@ metadata:
   labels:
     app: python-web-app
 spec:
-  replicas: 2
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: python-web-app
@@ -16,6 +18,7 @@ spec:
     spec:
       containers:
       - name: python-web-app
-        image: arjunpt/go-web-app:{{ .Values.image.tag }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
-        - containerPort: 5000 #port on docker file 
+        - containerPort: 5000
