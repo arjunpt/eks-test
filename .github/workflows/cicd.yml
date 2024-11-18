@@ -15,7 +15,6 @@ jobs:
       ecr-repo-name: "python"
       ECR_REGISTRY: "445567111188.dkr.ecr.us-east-1.amazonaws.com"
       IMAGE_NAME: "python"
-      IMAGE_TAG: "latest"
       deployment-manifest: "manifest/deployment.yaml"
       service-manifest: "manifest/service.yaml"
     secrets:
