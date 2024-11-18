@@ -4,7 +4,7 @@ replicaCount: 1
 
 image:
   repository: 445567111188.dkr.ecr.us-east-1.amazonaws.com/python
-  tag: "11893598960"
+  tag: "11893663438"
   pullPolicy: IfNotPresent
 
 ingress:
